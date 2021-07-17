@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>MotoCentro - Reto1</title>
+    <link href="css/estilosmanuales.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="encabezado">
+            <div class="imagenencabezado" style="flex-grow: 1;">
+                <img class="logo" src="images/logo.png">
+            </div>
+            <div class="tituloencabezado" style="flex-grow: 8;">
+                <h1>Moto Centro MONCIA</h1>
+            </div>
+        </div>
+    </a>
+
+    <div class="divmenuprincipal">
+        <ul class="ulmenuprincipal ">
+            <a href="index.html">
+                <li class="limenuprincipal ">Inicio</li>
+            </a>
+            <a href="quienessomos.html">
+                <li class="limenuprincipal ">Quienes Somos</li>
+            </a>
+            <a href="contactenos.html">
+                <li class="limenuprincipal ">Contactenos</li>
+            </a>
+            </a>
+            <a href="manuales.html">
+                <li class="limenuprincipal ">Manuales</li>
+            </a>
+            </a>
+            <a href="galeria.html">
+                <li class="limenuprincipal ">Galeria</li>
+            </a>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="images/galeria/galeriaslider5.jpg" style="width: 100%;">
+    </div>
+    <div class="contenedorppal">
+        <button onclick="mostrarocultar('honda')" class="botonmanuales" type="button" >Honda</button>
+        <div id="honda" class="hide" >
+            <a href="manuales/MOTOR.PDF" class="itemmanual" download="XR250 Motor"><h5 style="margin: 2px;">Torando XR 250</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">XR 650</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">CBF 160</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">XRE 300</h5></a>
+        </div>
+        <button onclick="mostrarocultar('auteco')" class="botonmanuales" type="button" >Auteco</button>
+        <div id="auteco" class="hide" >
+            <a class="itemmanual"><h5 style="margin: 2px;">Pulsar 180</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">Pursar NS 200</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">Boxer CT 100</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">Discovery 135</h5></a>
+        </div>
+        <button onclick="mostrarocultar('yamaha')" class="botonmanuales" type="button" >Yamaha</button>
+        <div id="yamaha" class="hide">
+            <a class="itemmanual"><h5 style="margin: 2px;">RX 100</h5></a>
+            <a href="manuales/Manual de Servicio XTZ 250 Lander.pdf" class="itemmanual" download="XTZ 250"><h5 style="margin: 2px;">XTZ 250</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">XTZ 125</h5></a>
+            <a class="itemmanual"><h5 style="margin: 2px;">RX 115</h5></a>
+        </div>
+    </div>
+    
+
+
+
+</body>
+<script>
+    function mostrarocultar(id){
+      var divamotrar= document.getElementById(id);
+      if(divamotrar.className.indexOf("show")== -1) {
+          divamotrar.className ="show";
+      }else{
+        divamotrar.className= divamotrar.className.replace("show","hide")  
+      }
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,131 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+div.encabezado {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.tituloencabezado {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+div.divmenuprincipal {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.ulmenuprincipal {
+    list-style: none;
+    border: black solid 0.5px;
+    height: 40px;
+    margin: 0;
+    padding-left: 0%;
+    background-color: white;
+}
+
+.limenuprincipal {
+    float: left;
+    width: 20%;
+    font-size: larger;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.limenuprincipal:hover {
+    background-color: black;
+    color: white;
+}
+
+div.contenedorpplservicios {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorpplservicios>div {
+    width: 50%;
+}
+
+p {
+    font-size: larger;
+    text-align: center;
+}
+
+div.contenedorservicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.contenedorservicios>div {
+    margin: 5px;
+}
+
+.imgservicio {
+    height: 110px;
+}
+
+h3 {
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.mostrarservicio {
+    display: block;
+}
+
+.ocultarservicio {
+    display: none;
+}
+
+div.divboletin {
+    float: left;
+}
+
+.label {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.label,
+.input,
+button {
+    margin-left: 50px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 3px 0px 38px rgb(58, 57, 57);
+}

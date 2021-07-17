@@ -1,0 +1,74 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+div.encabezado {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.tituloencabezado {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+div.divmenuprincipal {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.ulmenuprincipal {
+    list-style: none;
+    border: black solid 0.5px;
+    height: 40px;
+    margin: 0;
+    padding-left: 0%;
+    background-color: white;
+}
+
+.limenuprincipal {
+    float: left;
+    width: 20%;
+    font-size: larger;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.limenuprincipal:hover {
+    background-color: black;
+    color: white;
+}
+
+.quienessomos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.quienessomos>div {
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    width: max-content;
+}
